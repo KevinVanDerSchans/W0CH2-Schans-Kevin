@@ -15,65 +15,61 @@
     <h1 class="title">Ayuda a Edu a pedir una pizza!</h1>
   </header>
 
-  <section class="pizza-choices">
-    <span>Tipo</span>
-    <form action="#" class="form-pizza-choices">
-      <label for="type">Tamaño de pizza</label>
+  <form action="#">
+    <fieldset class="pizza-type">
+      <legend>Tipo</legend>
+      <span>Tamaño de pizza</span>
       <select type="input" id="type" type=text required>
         <option value="small" selected>Pequeña</option>
         <option value="medium">Mediana</option>
         <option value="big">Grande</option>
+        <label for="type">Tamaño de pizza</label>
       </select>
-    </form>
 
-    <form action="#" class="form-pizza-dough">
-      <label for="dough">Tipo de masa</label>
+      <span>Tipo de masa</span>
       <select type="input" id="dough" required>
         <option value="thin" selected>Fina</option>
         <option value="thick">Gruesa</option>
         <option value="bread">Pan</option>
+        <label for="dough">Tamaño de pizza</label>
       </select>
-    </form>
+    </fieldset>
 
-    <section class="ingredients">
-      <span>Ingredientes</span>
-      <form action="#" class="form-pizza-ingredients">
-        <label for="dough"></label>
-        <ul>
-          <li>
-            <input type="checkbox" id="pepperoni">
-            <label for="pepperoni">Pepperoni</label>
-          </li>
+    <fieldset>
+      <legend>Ingredientes</legend>
+      <ul>
+        <li>
+          <input type="checkbox" id="pepperoni">
+          <label for="pepperoni">Pepperoni</label>
+        </li>
+        <li>
+          <input type="checkbox" id="setas">
+          <label for="mushrooms">Setas</label>
+        </li>
+        <li>
+          <input type="checkbox" id="onion">
+          <label for="onion">Cebolla</label>
+        </li>
+        <li>
+          <input type="checkbox" id="pepper">
+          <label for="pepper">Pimiento</label>
+        </li>
+        <li>
+          <input type="checkbox" id="pineapple">
+          <label for="pineapple">Piña</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <button type="submit">Pedir pizza</button>
+    </fieldset>
+  </form>
 
-          <li>
-            <input type="checkbox" id="setas">
-            <label for="mushrooms">Setas</label>
-          </li>
-          <li>
-            <input type="checkbox" id="onion">
-            <label for="onion">Cebolla</label>
-          </li>
-          <li>
-            <input type="checkbox" id="pepper">
-            <label for="pepper">Pimiento</label>
-          </li>
-          <li>
-            <input type="checkbox" id="pineapple">
-            <label for="pineapple">Piña</label>
-          </li>
-        </ul>
-      </form>
-    </section>
+  <section class="feedback-container showOff">
+    <p class="feedback-text"></p>
+  </section>
 
-    <section class="order-pizza-button">
-      <form action="#">
-        <button type="submit">Pedir pizza</button>
-      </form>
-    </section>
-
-    <section class="feedback-container showOff">
-      <p class="feedback-text"></p>
-    </section>
+  <script src="main.js"></script>
 </body>
 
 </html>
