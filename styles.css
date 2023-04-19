@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.showOff {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}

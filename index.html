@@ -2,17 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles\styles.css">
-    <title>EduPizzas Form</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <title>EduPizzas Form</title>
 </head>
 
 <body>
+  <header>
+    <h1>Ayuda a Edu a pedir una pizza!</h1>
+  </header>
 
+  <section class="pizza-choices">
+    <span>Tipo</span>
+    <form action="#" class="form-pizza-choices">
+      <label for="type">Tamaño de pizza</label>
+      <select type="input" id="type" type=text required>
+        <option value="small" selected>Pequeña</option>
+        <option value="medium">Mediana</option>
+        <option value="big">Grande</option>
+      </select>
+    </form>
 
+    <form action="#" class="form-pizza-dough">
+      <label for="dough">Tipo de masa</label>
+      <select type="input" id="dough" required>
+        <option value="thin" selected>Fina</option>
+        <option value="thick">Gruesa</option>
+        <option value="bread">Pan</option>
+      </select>
+    </form>
+
+    <section class="ingredients">
+      <span>Ingredientes</span>
+      <form action="#" class="form-pizza-ingredients">
+        <label for="dough"></label>
+        <ul>
+          <li>
+            <input type="checkbox" id="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+          </li>
+
+          <li>
+            <input type="checkbox" id="setas">
+            <label for="mushrooms">Setas</label>
+          </li>
+          <li>
+            <input type="checkbox" id="onion">
+            <label for="onion">Cebolla</label>
+          </li>
+          <li>
+            <input type="checkbox" id="pepper">
+            <label for="pepper">Pimiento</label>
+          </li>
+          <li>
+            <input type="checkbox" id="pineapple">
+            <label for="pineapple">Piña</label>
+          </li>
+        </ul>
+      </form>
+    </section>
+
+    <section class="order-pizza-button">
+      <form action="#">
+        <button type="submit">Pedir pizza</button>
+      </form>
+    </section>
+
+    <section class="feedback-container showOff">
+      <p class="feedback-text"></p>
+    </section>
 </body>
 
 </html>
